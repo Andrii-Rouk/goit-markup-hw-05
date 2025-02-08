@@ -638,3 +638,132 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     flex-direction: row;
 }
+
+
+/* <========    modal  window  =======> */
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    height: 584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+background-color: #fcfcfc;
+border-radius: 4px;
+transform: translate(-50%, -50%);
+padding: 72px 24px 24px 24px;
+
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.backdrop:not(.is-open) .modal {
+    transform: translate(-50%, -100%);
+}
+/*                                     */
+
+
+.modal-button {
+    border-radius: 100%;
+    border: none;
+fill: #2e2f42;
+height: 24px;
+width: 24px;
+position: absolute;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 24;
+  top: 24px;
+  right: 24px;
+   stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.icon-close-link {
+    fill: ;
+}
+.modal-txt {
+    font-family: "Roboto", sans-serif;
+ font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+margin-bottom: 16px;
+}
+.modal-input {
+    width: 100%;
+    border: 1px solid #4d5ae5;
+border-radius: 4px;
+height: 40px;
+outline: transparent;
+}
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: rgba(46, 47, 66, 0.4);
+}
+.modal-name {
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+.modal-label {
+    display: block;
+    width: 18px;
+    margin: 0;
+    padding: 0;
+    color: #8E8F99;
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+margin-bottom: 4px;
+}
+.user-icon {
+    fill: #4d5ae5;
+  border-color: #4d5ae5;
+  position: absolute;
+}
+.form-input {
+    position: relative;
+    margin-bottom: 16px;
+}
+.form-label {
+}
