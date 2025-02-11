@@ -118,8 +118,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
 }
 
-.contacts-list {
-}
 
 .kontakts {
     display: flex;
@@ -230,9 +228,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 120px;
 }
 
-.container-spectxt {
-}
-
 .spec-txt {
 /* display: flex;
 align-items: flex-start;
@@ -275,8 +270,6 @@ color: #434455;
 
             /* Секція-3 "Our Team" з фото та і текстом */
 
-.komand-container {
-}
 
 .galeri {
     width: calc((100% - 72px) / 4);
@@ -655,7 +648,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
     pointer-events: none;
  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
- visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -759,7 +752,9 @@ font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
+/* color: rgba(46, 47, 66, 0.4); */
+line-height: 2;
+color: #fff;
 }
 
 .modal-name {
