@@ -836,17 +836,19 @@ margin-left: 16px;
 }
 
 .modal-but-fut {
+    border: none;
     border-radius: 4px;
     padding: 16px 32px;
     margin-left: 88px;
     margin-right: 87px;
-    width: 169px;
-    height: 56px;
+    min-width: 169px;
+    min-height: 56px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
     color: #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
