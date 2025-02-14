@@ -779,11 +779,12 @@ color: #8e8f99;
 
 .modal-label {
     display: block;
-    width: 18px;
+    /* width: 18px; */
     margin: 0;
     padding: 0;
     color: #8E8F99;
     font-family: "Roboto", sans-serif;
+    background-color: transparent;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
