@@ -824,8 +824,13 @@ height: 120px;
 outline: transparent;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
+background-color: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 resize: none;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #8e8f99;
 }
 
 .textarea-comment:hover,
@@ -837,10 +842,10 @@ resize: none;
 .textarea-comment::placeholder {
     font-family: "Roboto", sans-serif;
 font-weight: 400;
-font-size: 12px;
+/* font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
-color: #8e8f99;
+color: #8e8f99; */
 opacity: 0.5;
 margin-top: 8px;
 margin-left: 16px;
@@ -858,7 +863,6 @@ margin-left: 16px;
     padding: 16px 32px;
     margin-left: 96px;
     margin-right: 95px;
-    margin-top: 24px;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
@@ -877,6 +881,9 @@ margin-left: 16px;
         background-color: #404bbf;
     }
 
+.modal-chek {
+    margin-bottom: 24px;
+}
 
     .chek-lab-txt {
         font-family: "Roboto", sans-serif;
@@ -902,13 +909,13 @@ color: #4d5ae5;
     width: 10px;
     height: 8px;
     /* border-radius: 2px; */
-    fill: #f4f4fd;
+    fill: #fff;
    }
 
 .chek-lab-span {
     width: 16px;
     height: 16px;
-fill: #f4f4fd;
+fill: #fff;
 fill: transparent;
     border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -924,5 +931,5 @@ fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-hidden:checked + .chek-lab-txt > .chek-lab-span {
     background-color: #404bbf;
         border: none;
-        fill: #fff;
+        fill: #f4f4fd;
 }
