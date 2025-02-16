@@ -825,9 +825,9 @@ margin-bottom: 4px;
 height: 120px;
 font-weight: 400;
 font-size: 12px;
-/* line-height: 1.17; */
+line-height: 1.17;
 letter-spacing: 0.04em;
-/* color: rgba(46, 47, 66, 0.4); */
+color: rgba(46, 47, 66, 0.4);
 outline: transparent;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
@@ -912,8 +912,7 @@ color: #4d5ae5;
     justify-content: center;
     width: 10px;
     height: 8px;
-    /* border-radius: 2px; */
-    fill: #fff;
+        fill: #fff;
    }
 
 .chek-lab-span {
