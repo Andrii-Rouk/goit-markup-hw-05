@@ -810,6 +810,8 @@ margin-bottom: 4px;
     /* outline: transparent; */
 }
 
+
+
 .form-label {
     margin-bottom: 8px;
 }
@@ -905,7 +907,7 @@ color: #4d5ae5;
 }
 
 .modal-icon {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     width: 10px;
