@@ -46,8 +46,9 @@ textarea {
   padding: 0;
   margin: 0;
   font: inherit;
-    cursor: text;
-    background-color: transparent;
+  cursor: text;
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
 button {
@@ -79,14 +80,3 @@ button {
   clip-path: inset(100%);
   margin: -1px;
 }
-
-
-
-
-
-
-
-
-
-
-
